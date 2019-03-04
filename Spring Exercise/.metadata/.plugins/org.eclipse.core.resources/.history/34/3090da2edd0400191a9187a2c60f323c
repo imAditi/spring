@@ -1,0 +1,5 @@
+package com.example.pbapp.exception;
+
+public class BlockUserException {
+
+}

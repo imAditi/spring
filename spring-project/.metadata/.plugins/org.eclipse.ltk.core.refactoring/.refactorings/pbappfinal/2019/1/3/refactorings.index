@@ -1,0 +1,23 @@
+1547810464828	Rename package 'com.example.pbapp1.configuration'
+1547810479881	Rename package 'com.example.pbapp1.controller'
+1547810489449	Rename package 'com.example.pbapp1.dao'
+1547810516313	Rename package 'com.example.pbapp1.daoimpl'
+1547810528112	Rename package 'com.example.pbapp1.domain'
+1547810537337	Rename package 'com.example.pbapp1.exception'
+1547810544385	Rename package 'com.example.pbapp1.rowmapper'
+1547810551861	Rename package 'com.example.pbapp1.service'
+1547810560228	Rename package 'com.example.pbapp1.serviceimpl'
+1547814176961	Delete elements
+1547814458781	Delete elements
+1547814972805	Rename package 'com.example.pbapp1.controller'
+1547815277070	Rename package 'com.example.pbapp1.configuration'
+1547815285987	Rename package 'com.example.pbapp1.dao'
+1547815296882	Rename package 'com.example.pbapp1.daoimpl'
+1547815305955	Rename package 'com.example.pbapp1.domain'
+1547815315698	Rename package 'com.example.pbapp1.exception'
+1547815323948	Rename package 'com.example.pbapp1.rowmapper'
+1547815332557	Rename package 'com.example.pbapp1.service'
+1547815341375	Rename package 'com.example.pbapp1.serviceimpl'
+1547817009619	Copy compilation unit
+1547817043246	Copy package
+1547817379271	Copy packages

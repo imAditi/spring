@@ -1,0 +1,9 @@
+package com.example.pbapp.dao;
+/**
+ * This UserDAO interface will perform CRUD operations related to user
+ * @author aditi.jain
+ *
+ */
+public interface UserDAO {
+
+}

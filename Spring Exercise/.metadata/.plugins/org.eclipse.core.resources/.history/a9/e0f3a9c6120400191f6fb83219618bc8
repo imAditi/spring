@@ -1,0 +1,39 @@
+package com.example.pbapp.domain;
+
+import java.util.Date;
+
+/**
+ * This person model will hold the common properties
+ * @author aditi.jain
+ *
+ */
+public class Person {
+	/**
+	 * id of person
+	 */
+private int id;
+/**
+ * name of person
+ */
+private String name;
+/**
+ * phone of person
+ */
+private String phone;
+/**
+ * address of person
+ */
+private String address;
+/**
+ * email of person
+ */
+private String email;
+/**
+ * Date-time when person is created first time
+ */
+private Date created_At;
+/**
+ * Date-time when person is updated
+ */
+private Date updated_At;
+}

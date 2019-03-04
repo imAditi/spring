@@ -1,0 +1,23 @@
+package com.example.pbapp.domain;
+
+import java.util.Date;
+
+/**
+ * Contact model is used as adata traveler from layer to layer
+ * @author aditi.jain
+ *
+ */
+public class Contact {
+private int id;
+private int userid;
+private String name;
+private String phone;
+private String group;
+private String address;
+private String email;
+private String remark;
+private int created_at;
+private int updated_at;
+private Date created_at;
+private Date updated_at;
+}

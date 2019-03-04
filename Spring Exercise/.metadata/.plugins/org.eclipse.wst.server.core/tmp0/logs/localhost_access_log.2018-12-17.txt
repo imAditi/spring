@@ -1,0 +1,6 @@
+127.0.0.1 - - [17/Dec/2018:13:49:05 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [17/Dec/2018:13:49:05 +0530] "GET /HelloWorldSpringDemo/ HTTP/1.1" 200 99
+0:0:0:0:0:0:0:1 - - [17/Dec/2018:13:49:05 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [17/Dec/2018:13:49:07 +0530] "GET /test/hello HTTP/1.1" 404 1088
+0:0:0:0:0:0:0:1 - - [17/Dec/2018:13:49:38 +0530] "GET /test/hello/simpleapp/helloagain HTTP/1.1" 404 1117
+0:0:0:0:0:0:0:1 - - [17/Dec/2018:13:49:42 +0530] "GET /test/hello/simpleapp/helloagain HTTP/1.1" 404 1117

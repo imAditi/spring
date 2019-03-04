@@ -1,0 +1,44 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+	<bean id="blogRepository" class="com.yash.pojo.BlogRepository">
+
+		<property name="blogList">
+			<list>
+				<ref bean="Blog1"></ref>
+				<ref bean="Blog2"></ref>
+				<ref bean="Blog3"></ref>
+			</list>
+		</property>
+
+	</bean>
+
+	<bean id="Blog1" class="com.yash.pojo.Blog">
+		<property name="id" value="100"></property>
+		<property name="title" value="title"></property>
+		<property name="body" value="1fgbdgdr"></property>
+		<property name="description" value="gdrgre"></property>
+	</bean>
+	
+	<bean id="Blog2" class="com.yash.pojo.Blog">
+		<property name="id" value="101"></property>
+		<property name="title" value="titfle"></property>
+		<property name="body" value="1fgbdgerfggdr"></property>
+		<property name="description" value="gdrgrgrgre"></property>
+	</bean>
+	
+	<bean id="Blog3" class="com.yash.pojo.Blog">
+		<property name="id" value="102"></property>
+		<property name="title" value="tittgertle"></property>
+		<property name="body" value="1fgbdtrergdr"></property>
+		<property name="description" value="gdrgyrerre"></property>
+	</bean>
+	
+	<bean id="blogDaoServiceImpl" class="com.yash.pojo.BlogDaoServiceImpl"/>
+	<bean id="blogServiceImpl" class="com.yash.pojo.BlogServiceImpl"/>
+
+</beans>

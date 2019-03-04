@@ -1,0 +1,24 @@
+package com.example.pbapp.configuration;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
+/**
+ * This is responsible for web layer configuration like
+ * static resource, view resolver, etc.
+ * @author aditi.jain
+ *
+ */
+@Configuration
+@EnableWebMvc
+@ComponentScan(basePackages= {"com.example"})
+public class SpringConfig extends WebMvcConfigurerAdapter {
+	@Override
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		// TODO static resource configuration will happen here like css and js
+		super.addResourceHandlers(registry);
+	}
+}

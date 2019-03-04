@@ -1,0 +1,9 @@
+package com.example.pbapp.dao;
+/**
+ * This ContactDAO interface will perform CRUD operations related to contact
+ * @author aditi.jain
+ *
+ */
+public interface ContactDAO {
+
+}

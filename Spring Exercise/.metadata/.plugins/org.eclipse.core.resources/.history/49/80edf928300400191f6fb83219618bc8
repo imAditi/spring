@@ -1,0 +1,33 @@
+package com.example.pbapp.rowmapper;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.springframework.jdbc.core.RowMapper;
+
+import com.example.pbapp.domain.User;
+/**
+ * UserRowMapper is used 
+ * @author aditi.jain
+ *
+ */
+public class UserRowMapper implements RowMapper<User> {
+
+	public User mapRow(ResultSet rs, int rowNum) throws SQLException {
+		User user = new User();
+		user.setId(rs.getRowId(5));
+		user.setName(rs.getName("Aditi"));
+		user.setPhone(rs.getPhone("787978237"));
+		user.setAddress(rs.getAddress("Indore"));
+		user.setEmail(rs.getEmail("aditi@yash.com"));
+		user.setStatus(rs.getStatus(1));
+		user.setRole(rs.getRole(2));
+		user.setLoginname(rs.getLoginname("Aditi"));
+		user.setPassword(rs.getPassword("123"));
+		user.setCreated_At(rs.getCreated_At);
+		return null;
+	}
+
+	
+
+}

@@ -1,0 +1,60 @@
+package com.example.pbapp.domain;
+
+import java.util.Date;
+
+/**
+ * This user model is used as a traveller form layer to layer
+ * @author aditi.jain
+ *
+ */
+public class User {
+	/**
+	 * id of user
+	 * primary key
+	 */
+	private int id;
+	/**
+	 * name of user
+	 */
+	private String name;
+	/**
+	 * phone of user
+	 */
+	private String phone;
+	/**
+	 * address of user
+	 */
+	private String address;
+	/**
+	 * email of user
+	 */
+	private String email;
+	/**
+	 * status of user
+	 * 1: Active 2: Block
+	 * By default user will be active at registration time
+	 */
+	private int status;
+	/**
+	 * role of user
+	 * 1: Admin 2: User
+	 * By default user will be User at registration time
+	 */
+	private int role;
+	/**
+	 * loginname of user
+	 */
+	private String loginname;
+	/**
+	 * password of user
+	 */
+	private String password;
+	/**
+	 * Date - time when user is created first time
+	 */
+	private Date created_at;
+	/**
+	 * Date - time when user is updated
+	 */
+	private Date updated_at;
+}

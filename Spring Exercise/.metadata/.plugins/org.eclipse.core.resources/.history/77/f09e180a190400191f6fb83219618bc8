@@ -1,0 +1,9 @@
+package com.example.pbapp.dao;
+
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcDaoSupport;
+
+// NOTE: Do not use @Service, @Repository, @Component annotation here. It is not Spring managed object.
+// User should not be able to create its object, it is specifically used at the time of when datasource is needed in DAO
+public abstract class BaseDAO extends NamedParameterJdbcDaoSupport {
+
+}

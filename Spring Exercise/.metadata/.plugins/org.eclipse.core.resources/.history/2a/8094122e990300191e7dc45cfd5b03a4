@@ -1,0 +1,146 @@
+package com.example.pbapp.domain;
+
+import java.util.Date;
+
+/**
+ * This user model is used as a traveller form layer to layer
+ * 
+ * @author aditi.jain
+ *
+ */
+public class User {
+	/**
+	 * id of user primary key
+	 */
+	private int id;
+	/**
+	 * name of user
+	 */
+	private String name;
+	/**
+	 * phone of user
+	 */
+	private String phone;
+	/**
+	 * address of user
+	 */
+	private String address;
+	/**
+	 * email of user
+	 */
+	private String email;
+	/**
+	 * status of user 1: Active 2: Block By default user will be active at
+	 * registration time
+	 */
+	private int status;
+	/**
+	 * role of user 1: Admin 2: User By default user will be User at registration
+	 * time
+	 */
+	private int role;
+	/**
+	 * loginname of user
+	 */
+	private String loginname;
+	/**
+	 * password of user
+	 */
+	private String password;
+	/**
+	 * Date - time when user is created first time
+	 */
+	private Date created_at;
+	/**
+	 * Date - time when user is updated
+	 */
+	private Date updated_at;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
+	}
+
+	public int getRole() {
+		return role;
+	}
+
+	public void setRole(int role) {
+		this.role = role;
+	}
+
+	public String getLoginname() {
+		return loginname;
+	}
+
+	public void setLoginname(String loginname) {
+		this.loginname = loginname;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public Date getCreated_at() {
+		return created_at;
+	}
+
+	public void setCreated_at(Date created_at) {
+		this.created_at = created_at;
+	}
+
+	public Date getUpdated_at() {
+		return updated_at;
+	}
+
+	public void setUpdated_at(Date updated_at) {
+		this.updated_at = updated_at;
+	}
+}

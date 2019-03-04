@@ -1,0 +1,78 @@
+package com.example.pbapp.daoimpl;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
+
+import com.example.pbapp.dao.BaseDAO;
+import com.example.pbapp.dao.UserDAO;
+import com.example.pbapp.domain.Contact;
+import com.example.pbapp.domain.User;
+
+public class UserDAOImpl extends BaseDAO implements UserDAO {
+
+	public void save(User user) {
+		String sql = "INSERT INTO (name,email,status,role,loginname,password) VALUES (:name,:email,:status,:role,:loginname,:password)";
+		Map<String, Object> params = new HashMap<String, Object>();
+		params.put("name", user.getName());
+		params.put("email", user.getEmail());
+		params.put("status", user.getStatus());
+		params.put("role", user.getRole());
+		params.put("loginname", user.getLoginname());
+		params.put("password", user.getPassword());
+		SqlParameterSource paramSource = new MapSqlParameterSource(params);
+		KeyHolder kh = new GeneratedKeyHolder();
+		getNamedParameterJdbcTemplate().update(sql, paramSource, kh);
+		int id = kh.getKey().intValue();
+		user.setId(id);
+	}
+
+	public void update(User user) {
+		String sql = "UPDATE users "+"set name = :name, "+" phone = :phone, "+"address = :address, "+" email = :email, "+"status = :status, "+"role = :role, "+"password = :password where id = :id )";
+		Map<String, Object> params = new HashMap<String, Object>();
+		params.put("name", user.getName());
+		params.put("phone", user.getPhone());
+		params.put("address", user.getAddress());
+		params.put("email", user.getEmail());
+		params.put("status", user.getStatus());
+		params.put("role", user.getRole());
+		params.put("password", user.getPassword());
+		SqlParameterSource paramSource = new MapSqlParameterSource(params);
+		KeyHolder kh = new GeneratedKeyHolder();
+		getNamedParameterJdbcTemplate().update(sql, paramSource, kh);
+		int id = kh.getKey().intValue();
+		user.setId(id);
+	}
+
+
+	public void delete(int userId) {
+		String sql = "DELETE FROM users where id = ?";
+		getJdbcTemplate().update(sql, userId);
+	}
+
+	public void delete(User user) {
+		this.delete(user.getId());
+
+	}
+
+	public Contact findById(int userId) {
+	String sql = "SELECT from users WHERE id = "?";
+		return null;
+	}
+
+	public List<User> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<User> findByProperty(String propertyName, Object propertyValue) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

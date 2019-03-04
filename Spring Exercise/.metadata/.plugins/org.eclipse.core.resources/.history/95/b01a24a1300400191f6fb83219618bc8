@@ -1,0 +1,30 @@
+package com.example.pbapp.configuration;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.example.pbapp.dao.UserDAO;
+import com.example.pbapp.domain.User;
+
+public class TestUserDAOImpl_UpdateOperation {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringRootConfig.class);
+		UserDAO userDAO = ctx.getBean(UserDAO.class);
+		// user information will be received by user-reg-form
+		User user = new User();
+		user.setId(7);
+		user.setName("Ami");
+		user.setPhone("98837763");
+		user.setAddress("Indore");
+		user.setEmail("Ami@yash.com");
+		user.setStatus(2); //Block user
+		user.setRole(2); // Guest User
+		user.setPassword("Ami123");
+		userDAO.update(user);
+
+		System.out.println("Success! User Updated");
+
+	}
+
+}

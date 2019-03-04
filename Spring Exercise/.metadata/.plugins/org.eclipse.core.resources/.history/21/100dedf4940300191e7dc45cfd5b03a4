@@ -1,0 +1,13 @@
+package com.example.pbapp.configuration;
+
+import javax.activation.DataSource;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class TestDataSource {
+public static void main(String[] args) {
+	ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringRootConfig.class);
+	ctx.getBean(DataSource.class);
+}
+}

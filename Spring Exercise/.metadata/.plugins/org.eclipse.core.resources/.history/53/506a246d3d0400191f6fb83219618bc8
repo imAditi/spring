@@ -1,0 +1,27 @@
+package com.example.pbapp.rowmapper;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.springframework.jdbc.core.RowMapper;
+
+import com.example.pbapp.domain.Contact;
+import com.example.pbapp.domain.User;
+
+/**
+ * ContactRowMapper will take input from resultSet and map each field in the user domain
+ * @author aditi.jain
+ *
+ */
+public class ContactRowMapper implements RowMapper<Contact> {
+
+	public Contact mapRow(ResultSet rs, int rowNum) throws SQLException {
+		
+		return null;
+	}
+
+}
+
+
+
+}

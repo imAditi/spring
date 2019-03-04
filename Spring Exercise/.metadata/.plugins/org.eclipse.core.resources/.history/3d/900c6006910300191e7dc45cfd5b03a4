@@ -1,0 +1,9 @@
+package com.example.pbapp.domain;
+/**
+ * This user model is used as a traveller form layer to layer
+ * @author aditi.jain
+ *
+ */
+public class User {
+
+}

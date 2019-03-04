@@ -1,0 +1,67 @@
+package com.example.pbapp.daoimpl;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
+import org.springframework.stereotype.Repository;
+
+import com.example.pbapp.dao.BaseDAO;
+import com.example.pbapp.dao.UserDAO;
+import com.example.pbapp.domain.User;
+
+@Repository
+public class UserDAOImpl extends BaseDAO implements UserDAO{
+
+	public void save(User user) {
+		String sql = "INSERT INTO users(name,email,status,role,loginname,password) VALUES (:name,:email,:status,:role,:loginname,:password)";
+		Map<String, Object> params =  new HashMap<String, Object>();
+		params.put("name", user.getName());
+		params.put("email", user.getEmail());
+		params.put("status", user.getStatus());
+		params.put("role", user.getRole());
+		params.put("loginname", user.getLoginname());
+		params.put("password", user.getPassword());
+		SqlParameterSource paramSource = new MapSqlParameterSource(params);
+		KeyHolder kh =  new GeneratedKeyHolder();
+		getNamedParameterJdbcTemplate().update(sql, paramSource, kh);
+		Integer id = kh.getKey().intValue();
+		user.setId(id);
+
+	}
+
+	public void update(User user) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void delete(Integer userId) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void delete(User user) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public User findById(Integer userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<User> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<User> findByProperty(String propertyName, Object propertyValue) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,25 @@
+<!-- <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd"> -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="applicationIssue" class="com.yash.pojo.ApplicationIssue">
+	<property name="issue">
+		<list>
+			<ref bean="issue1" />
+			<ref bean="issue2" />
+		</list>
+		</property>
+	</bean>
+
+	<bean id="issue1" class="com.yash.pojo.Issues">
+		<property name="issueType" value="BUG" />
+		<property name="issueTypeValue" value="Created" />
+	</bean>
+	<bean id="issue2" class="com.yash.pojo.Issues">
+		<property name="issueType" value="EPIC" />
+		<property name="issueTypeValue" value="efgcd" />
+	</bean>
+</beans>

@@ -1,0 +1,10 @@
+127.0.0.1 - - [18/Dec/2018:10:38:15 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:10:38:18 +0530] "GET /Spring4MVCFormValidationDemo/ HTTP/1.1" 200 5193
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:10:38:19 +0530] "GET /Spring4MVCFormValidationDemo/%3Cc:url%20value='/static/css/custom.css'/%3E HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:10:38:19 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:10:39:09 +0530] "POST /Spring4MVCFormValidationDemo/;jsessionid=FDD6377618B9D2DBCAA69857745FCA65 HTTP/1.1" 200 768
+127.0.0.1 - - [18/Dec/2018:11:38:04 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:11:38:06 +0530] "GET /Spring4MVCFormValidationDemo/ HTTP/1.1" 200 5285
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:11:38:06 +0530] "GET /Spring4MVCFormValidationDemo/static/css/custom.css HTTP/1.1" 200 499
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:11:38:06 +0530] "GET /Spring4MVCFormValidationDemo/static/css/bootstrap.css HTTP/1.1" 200 146010
+0:0:0:0:0:0:0:1 - - [18/Dec/2018:11:38:35 +0530] "POST /Spring4MVCFormValidationDemo/ HTTP/1.1" 200 768

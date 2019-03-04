@@ -1,0 +1,5 @@
+package com.example.pbapp.dao;
+
+public interface cONTAC {
+
+}

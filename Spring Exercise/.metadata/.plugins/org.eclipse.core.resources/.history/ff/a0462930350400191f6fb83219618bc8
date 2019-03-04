@@ -1,0 +1,5 @@
+package com.example.pbapp.daoimpl;
+
+public class ContactDAOImpl {
+
+}

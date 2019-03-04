@@ -1,0 +1,156 @@
+package com.example.pbapp.domain;
+
+import java.util.Date;
+
+/**
+ * Contact model is used as adata traveler from layer to layer
+ * 
+ * @author aditi.jain
+ *
+ */
+public class Contact {
+	/**
+	 * id of user
+	 */
+	private int id;
+	/**
+	 * 
+	 */
+	private int userid;
+	/**
+	 * name of user
+	 */
+	private String name;
+	/**
+	 * phone of user
+	 */
+	private String phone;
+	/**
+	 * group of user
+	 */
+	private String group;
+	/**
+	 * address of user
+	 */
+	private String address;
+	/**
+	 * email of user
+	 */
+	private String email;
+	/**
+	 * remark of user
+	 */
+	private String remark;
+	/**
+	 * Date - time when user creates
+	 */
+	private int created_By;
+	/**
+	 * Date - time when user updates
+	 */
+	private int updated_By;
+	/**
+	 * Date - time when user is created first time
+	 */
+	private Date created_At;
+	/**
+	 * Date - time when user is updated
+	 */
+	private Date updated_At;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getUserid() {
+		return userid;
+	}
+
+	public void setUserid(int userid) {
+		this.userid = userid;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getGroup() {
+		return group;
+	}
+
+	public void setGroup(String group) {
+		this.group = group;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getRemark() {
+		return remark;
+	}
+
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
+
+	public int getCreated_By() {
+		return created_By;
+	}
+
+	public void setCreated_By(int created_By) {
+		this.created_By = created_By;
+	}
+
+	public int getUpdated_By() {
+		return updated_By;
+	}
+
+	public void setUpdated_By(int updated_By) {
+		this.updated_By = updated_By;
+	}
+
+	public Date getCreated_At() {
+		return created_At;
+	}
+
+	public void setCreated_At(Date created_At) {
+		this.created_At = created_At;
+	}
+
+	public Date getUpdated_At() {
+		return updated_At;
+	}
+
+	public void setUpdated_At(Date updated_At) {
+		this.updated_At = updated_At;
+	}
+}

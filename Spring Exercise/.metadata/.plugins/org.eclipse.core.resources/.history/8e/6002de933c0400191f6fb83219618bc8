@@ -1,0 +1,31 @@
+package com.example.pbapp.configuration;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.example.pbapp.dao.ContactDAO;
+import com.example.pbapp.dao.UserDAO;
+import com.example.pbapp.domain.Contact;
+import com.example.pbapp.domain.User;
+
+public class TestContactDAOImpl_UpdateOperation {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(SpringRootConfig.class);
+		ContactDAO contactDAO = ctx.getBean(ContactDAO.class);
+		// contact information will be received by user-registration-form
+		Contact contact = new Contact();
+		contact.setId(1);
+		contact.setUserid(1);
+		contact.setName("Ami");
+		contact.setPhone("98837763");
+		contact.setAddress("Indore");
+		contact.setEmail("Ami@yash.com");
+		contact.setGroup_name("Family");
+		contactDAO.update(contact);
+
+		System.out.println("Success! User Updated");
+
+	}
+
+}

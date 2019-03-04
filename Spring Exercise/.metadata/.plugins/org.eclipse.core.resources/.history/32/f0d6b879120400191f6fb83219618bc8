@@ -1,0 +1,9 @@
+package com.example.pbapp.domain;
+/**
+ * This person model will hold the common properties
+ * @author aditi.jain
+ *
+ */
+public class Person {
+
+}
